@@ -8,3 +8,13 @@ C:\Users\smbugua\source\repos\PubIn\PubIn\bin\Debug\PubIn.exe
 C:\Users\smbugua\source\repos\PubIn\PubIn\bin\Debug\PubIn.pdb
 C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.exe
 C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.pdb
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\bin\Debug\PubIn.exe.config
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\bin\Debug\PubIn.exe
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\bin\Debug\PubIn.pdb
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\obj\Debug\PubIn.csprojResolveAssemblyReference.cache
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\obj\Debug\PubIn.admin.dashboard.resources
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\obj\Debug\PubIn.Properties.Resources.resources
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\obj\Debug\PubIn.csproj.GenerateResource.cache
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\obj\Debug\PubIn.csproj.CoreCompileInputs.cache
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\obj\Debug\PubIn.exe
+C:\Users\Mbugua\Documents\Projects\baradmit\PubIn\obj\Debug\PubIn.pdb
