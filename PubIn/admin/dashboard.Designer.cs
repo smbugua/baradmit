@@ -32,14 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,6 +78,25 @@
             this.panel3.Size = new System.Drawing.Size(330, 217);
             this.panel3.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(226)))));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(708, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(325, 40);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "PubIn Ticket Admin";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(52)))));
+            this.panel4.Location = new System.Drawing.Point(21, 75);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(14, 73);
+            this.panel4.TabIndex = 4;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
@@ -90,53 +109,28 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // button5
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(226)))));
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(708, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 40);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "PubIn Ticket Admin";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(41, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 73);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(41, 187);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 73);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Tickets";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::PubIn.Properties.Resources.icons8_combo_chart_50;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(41, 438);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(243, 73);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "Reports";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::PubIn.Properties.Resources.icons8_administrator_male_50;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(41, 411);
+            this.button3.Location = new System.Drawing.Point(41, 348);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(243, 73);
             this.button3.TabIndex = 7;
@@ -145,39 +139,45 @@
             // 
             // button4
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::PubIn.Properties.Resources.icons8_settings_50;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(41, 299);
+            this.button4.Location = new System.Drawing.Point(41, 260);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(243, 73);
             this.button4.TabIndex = 6;
             this.button4.Text = "Settings";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button2
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(41, 523);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(243, 73);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Reports";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::PubIn.Properties.Resources.icons8_two_tickets_50;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(41, 166);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(243, 73);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Tickets";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // button1
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(52)))));
-            this.panel4.Location = new System.Drawing.Point(21, 75);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(14, 73);
-            this.panel4.TabIndex = 4;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::PubIn.Properties.Resources.icons8_menu_50;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(41, 75);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(243, 73);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dashboard
             // 

@@ -1,0 +1,10 @@
+C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.csprojResolveAssemblyReference.cache
+C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.admin.dashboard.resources
+C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.Properties.Resources.resources
+C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.csproj.GenerateResource.cache
+C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.csproj.CoreCompileInputs.cache
+C:\Users\smbugua\source\repos\PubIn\PubIn\bin\Debug\PubIn.exe.config
+C:\Users\smbugua\source\repos\PubIn\PubIn\bin\Debug\PubIn.exe
+C:\Users\smbugua\source\repos\PubIn\PubIn\bin\Debug\PubIn.pdb
+C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.exe
+C:\Users\smbugua\source\repos\PubIn\PubIn\obj\Debug\PubIn.pdb

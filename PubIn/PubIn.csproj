@@ -64,6 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -80,6 +81,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="client\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-menu-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-two-tickets-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-settings-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-combo-chart-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-administrator-male-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
