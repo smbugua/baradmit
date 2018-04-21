@@ -51,10 +51,28 @@
     <Compile Include="admin\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="controlset\barscanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlset\barscanner.Designer.cs">
+      <DependentUpon>barscanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controlset\tickets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlset\tickets.Designer.cs">
+      <DependentUpon>tickets.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="admin\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlset\barscanner.resx">
+      <DependentUpon>barscanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlset\tickets.resx">
+      <DependentUpon>tickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,12 +93,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="pubinDataSet.xsc">
+      <DependentUpon>pubinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pubinDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pubinDataSet.xss">
+      <DependentUpon>pubinDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="client\" />
+    <None Include="images\tickets.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="images\menu.png" />
@@ -102,6 +130,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icons8-shutdown-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-facebook-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-instagram-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-internet-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-twitter-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\beermug.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-combi-ticket-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

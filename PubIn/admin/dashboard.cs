@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PubIn.controlset;
 
 namespace PubIn.admin
 {
@@ -14,20 +15,31 @@ namespace PubIn.admin
     {
         public dashboard()
         {
+
             InitializeComponent();
-            //slidepanel.Height = button1.Height;
+            slidepanel.Height = button1.Height;
+            slidepanel.Top = button1.Top;
+            barscanner b = new barscanner();
+            b.BringToFront();
+            tickets t = new tickets();
+            t.Hide();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             slidepanel.Height = button1.Height;
             slidepanel.Top = button1.Top;
+            barscanner b = new barscanner();
+            b.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             slidepanel.Height = button2.Height;
             slidepanel.Top = button2.Top;
+            tickets t = new tickets();
+            t.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -54,6 +66,16 @@ namespace PubIn.admin
         private void button6_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tickets1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

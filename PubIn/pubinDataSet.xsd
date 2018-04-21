@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="pubinDataSet" targetNamespace="http://tempuri.org/pubinDataSet.xsd" xmlns:mstns="http://tempuri.org/pubinDataSet.xsd" xmlns="http://tempuri.org/pubinDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="pubinConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="pubinConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PubIn.Properties.Settings.GlobalReference.Default.pubinConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="batchTableAdapter" GeneratorDataComponentClassName="batchTableAdapter" Name="batch" UserDataComponentName="batchTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pubinConnectionString (Settings)" DbObjectName="pubin.batch" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, eventname, status, datescheduled, datemodifed FROM batch</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ticketcolorTableAdapter" GeneratorDataComponentClassName="ticketcolorTableAdapter" Name="ticketcolor" UserDataComponentName="ticketcolorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pubinConnectionString (Settings)" DbObjectName="pubin.ticketcolor" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, colorname, status, datemodifed FROM ticketcolor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ticketsTableAdapter" GeneratorDataComponentClassName="ticketsTableAdapter" Name="tickets" UserDataComponentName="ticketsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pubinConnectionString (Settings)" DbObjectName="pubin.tickets" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, batchid, barcode, colorid, date_added FROM tickets</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ticketstatusTableAdapter" GeneratorDataComponentClassName="ticketstatusTableAdapter" Name="ticketstatus" UserDataComponentName="ticketstatusTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pubinConnectionString (Settings)" DbObjectName="pubin.ticketstatus" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, ticketid, status, datescanned FROM ticketstatus</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="usersTableAdapter" GeneratorDataComponentClassName="usersTableAdapter" Name="users" UserDataComponentName="usersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pubinConnectionString (Settings)" DbObjectName="pubin.users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, username, password, roleid, status, dateadded FROM users</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="pubinDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="pubinDataSet" msprop:Generator_UserDSName="pubinDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="batch" msprop:Generator_TableClassName="batchDataTable" msprop:Generator_TableVarName="tablebatch" msprop:Generator_TablePropName="batch" msprop:Generator_RowDeletingName="batchRowDeleting" msprop:Generator_RowChangingName="batchRowChanging" msprop:Generator_RowEvHandlerName="batchRowChangeEventHandler" msprop:Generator_RowDeletedName="batchRowDeleted" msprop:Generator_UserTableName="batch" msprop:Generator_RowChangedName="batchRowChanged" msprop:Generator_RowEvArgName="batchRowChangeEvent" msprop:Generator_RowClassName="batchRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ticketcolor" msprop:Generator_TableClassName="ticketcolorDataTable" msprop:Generator_TableVarName="tableticketcolor" msprop:Generator_TablePropName="ticketcolor" msprop:Generator_RowDeletingName="ticketcolorRowDeleting" msprop:Generator_RowChangingName="ticketcolorRowChanging" msprop:Generator_RowEvHandlerName="ticketcolorRowChangeEventHandler" msprop:Generator_RowDeletedName="ticketcolorRowDeleted" msprop:Generator_UserTableName="ticketcolor" msprop:Generator_RowChangedName="ticketcolorRowChanged" msprop:Generator_RowEvArgName="ticketcolorRowChangeEvent" msprop:Generator_RowClassName="ticketcolorRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tickets" msprop:Generator_TableClassName="ticketsDataTable" msprop:Generator_TableVarName="tabletickets" msprop:Generator_TablePropName="tickets" msprop:Generator_RowDeletingName="ticketsRowDeleting" msprop:Generator_RowChangingName="ticketsRowChanging" msprop:Generator_RowEvHandlerName="ticketsRowChangeEventHandler" msprop:Generator_RowDeletedName="ticketsRowDeleted" msprop:Generator_UserTableName="tickets" msprop:Generator_RowChangedName="ticketsRowChanged" msprop:Generator_RowEvArgName="ticketsRowChangeEvent" msprop:Generator_RowClassName="ticketsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ticketstatus" msprop:Generator_TableClassName="ticketstatusDataTable" msprop:Generator_TableVarName="tableticketstatus" msprop:Generator_TablePropName="ticketstatus" msprop:Generator_RowDeletingName="ticketstatusRowDeleting" msprop:Generator_RowChangingName="ticketstatusRowChanging" msprop:Generator_RowEvHandlerName="ticketstatusRowChangeEventHandler" msprop:Generator_RowDeletedName="ticketstatusRowDeleted" msprop:Generator_UserTableName="ticketstatus" msprop:Generator_RowChangedName="ticketstatusRowChanged" msprop:Generator_RowEvArgName="ticketstatusRowChangeEvent" msprop:Generator_RowClassName="ticketstatusRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="users" msprop:Generator_TableClassName="usersDataTable" msprop:Generator_TableVarName="tableusers" msprop:Generator_TablePropName="users" msprop:Generator_RowDeletingName="usersRowDeleting" msprop:Generator_RowChangingName="usersRowChanging" msprop:Generator_RowEvHandlerName="usersRowChangeEventHandler" msprop:Generator_RowDeletedName="usersRowDeleted" msprop:Generator_UserTableName="users" msprop:Generator_RowChangedName="usersRowChanged" msprop:Generator_RowEvArgName="usersRowChangeEvent" msprop:Generator_RowClassName="usersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
