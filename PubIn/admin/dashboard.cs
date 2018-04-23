@@ -63,6 +63,10 @@ namespace PubIn.admin
         {
             slidepanel.Height = button3.Height;
             slidepanel.Top = button3.Top;
+            createusers cu = new createusers();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(cu);
+            cu.BringToFront();
 
 
         }
@@ -71,6 +75,10 @@ namespace PubIn.admin
         {
             slidepanel.Height = button5.Height;
             slidepanel.Top = button5.Top;
+            panel5.Controls.Clear();
+            reportsmodule rm = new reportsmodule();
+            panel5.Controls.Add(rm);
+            rm.BringToFront();
         }
 
         private void button6_Click(object sender, EventArgs e)
