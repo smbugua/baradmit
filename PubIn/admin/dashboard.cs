@@ -20,10 +20,10 @@ namespace PubIn.admin
             slidepanel.Height = button1.Height;
             slidepanel.Top = button1.Top;
             barscanner b = new barscanner();
-            b.BringToFront();
-            tickets t = new tickets();
-            t.Hide();
-          
+            panel5.Controls.Clear();
+            panel5.Controls.Add(b);
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,7 +31,10 @@ namespace PubIn.admin
             slidepanel.Height = button1.Height;
             slidepanel.Top = button1.Top;
             barscanner b = new barscanner();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(b);
             b.BringToFront();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,13 +42,20 @@ namespace PubIn.admin
             slidepanel.Height = button2.Height;
             slidepanel.Top = button2.Top;
             tickets t = new tickets();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(t);
             t.BringToFront();
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             slidepanel.Height = button4.Height;
             slidepanel.Top = button4.Top;
+            settings s = new settings();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(s);
+            s.BringToFront();
 
         }
 
@@ -68,14 +78,6 @@ namespace PubIn.admin
             this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tickets1_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

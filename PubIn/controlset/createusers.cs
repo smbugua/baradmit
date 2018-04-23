@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PubIn.controlset
 {
-    public partial class barscanner : UserControl
+    public partial class createusers : UserControl
     {
-        public barscanner()
+        public createusers()
         {
             InitializeComponent();
-        }
-
-        private void barscanner_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

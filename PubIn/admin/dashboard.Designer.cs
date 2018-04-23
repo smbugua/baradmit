@@ -45,12 +45,9 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.barscanner1 = new PubIn.controlset.barscanner();
-            this.tickets1 = new PubIn.controlset.tickets();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -216,8 +213,6 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.barscanner1);
-            this.panel5.Controls.Add(this.tickets1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(224, 134);
             this.panel5.Name = "panel5";
@@ -280,22 +275,6 @@
             this.button7.TabIndex = 10;
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // barscanner1
-            // 
-            this.barscanner1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.barscanner1.Location = new System.Drawing.Point(3, 3);
-            this.barscanner1.Name = "barscanner1";
-            this.barscanner1.Size = new System.Drawing.Size(802, 479);
-            this.barscanner1.TabIndex = 0;
-            // 
-            // tickets1
-            // 
-            this.tickets1.BackColor = System.Drawing.Color.White;
-            this.tickets1.Location = new System.Drawing.Point(-6, 3);
-            this.tickets1.Name = "tickets1";
-            this.tickets1.Size = new System.Drawing.Size(808, 479);
-            this.tickets1.TabIndex = 1;
-            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,7 +297,6 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -341,7 +319,5 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel5;
-        private controlset.barscanner barscanner1;
-        private controlset.tickets tickets1;
     }
 }

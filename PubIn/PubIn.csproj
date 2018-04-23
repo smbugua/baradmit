@@ -57,6 +57,12 @@
     <Compile Include="controlset\barscanner.Designer.cs">
       <DependentUpon>barscanner.cs</DependentUpon>
     </Compile>
+    <Compile Include="controlset\settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlset\settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="controlset\tickets.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="controlset\barscanner.resx">
       <DependentUpon>barscanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlset\settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controlset\tickets.resx">
       <DependentUpon>tickets.cs</DependentUpon>
