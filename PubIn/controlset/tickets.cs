@@ -38,6 +38,7 @@ namespace PubIn.controlset
                 db.InsertTickets(eventname, "101"+n + i, colorname);
             }
             //MessageBox.Show("TICKETS HAVE BEEN SAVED SUCCESSFULLY");
+            this.Hide();
             dashboard d = new dashboard();
             d.Reset();
             d.Notifier("TICKETS HAVE BEEN SAVED SUCCESSFULLY");

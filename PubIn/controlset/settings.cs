@@ -23,6 +23,7 @@ namespace PubIn.controlset
         {
             DBConnect db = new DBConnect();
             db.insertBatch(eventname.Text);
+            this.Hide();
             dashboard d = new dashboard();
             d.Reset();
         }
@@ -31,8 +32,10 @@ namespace PubIn.controlset
         {
             DBConnect db = new DBConnect();
             db.insertColor(color.Text);
+            this.Hide();
             dashboard d = new dashboard();
             d.Reset();
+
         }
     }
 }
