@@ -86,6 +86,13 @@ namespace PubIn.admin
             this.Close();
         }
 
+        public void reset()
+        {
+            barscanner b = new barscanner();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(b);
+            b.BringToFront();
+        }
      
     }
 }
