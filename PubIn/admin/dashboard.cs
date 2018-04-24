@@ -90,6 +90,7 @@ namespace PubIn.admin
         public void Reset()
         {
             panel5.Controls.Clear();
+            this.Visible = false;
             barscanner b = new barscanner();
             panel5.Controls.Add(b);
             b.BringToFront();

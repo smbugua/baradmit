@@ -167,7 +167,7 @@ namespace PubIn.connect
 
         public int EventSelect( string eventname)
         {
-            string query = "SELECT id  FROM batch where eventname='"+ eventname+ "' order by datescheduled DESC";
+            string query = "SELECT id  FROM batch where eventname='"+ eventname+ "' order by eventname DESC";
             //Open connection
             if (this.OpenConnection() == true)
             {
@@ -194,6 +194,55 @@ namespace PubIn.connect
             
 
         }
+
+
+
+
+        public void TicketData(DataGridView dgv)
+        {
+            string query = "SELECT batchid,barcode,colorid,status,date_added FROM tickets  order by id DESC";
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataTable data_table = new DataTable();
+                da.Fill(data_table);
+                dgv.DataSource = data_table;               
+                this.CloseConnection();
+
+            }
+            
+
+
+
+        }
+
+        public void TicketDataFilter(DataGridView dgv,ComboBox eventname )
+        {
+            string query = "SELECT batchid,barcode,colorid,status,date_added FROM tickets  where batchid='"+eventname.Text.ToString()+"'  order by id DESC";
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataTable data_table = new DataTable();
+                da.Fill(data_table);
+                dgv.DataSource = data_table;
+                this.CloseConnection();
+
+            }
+
+
+
+
+        }
+      
+
 
         public int ColorSelect(string colorname)
         {
