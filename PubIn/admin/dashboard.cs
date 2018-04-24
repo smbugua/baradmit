@@ -22,6 +22,7 @@ namespace PubIn.admin
             barscanner b = new barscanner();
             panel5.Controls.Clear();
             panel5.Controls.Add(b);
+            notify.Visible = false;
 
 
         }
@@ -86,13 +87,22 @@ namespace PubIn.admin
             this.Close();
         }
 
-        public void reset()
+        public void Reset()
         {
-            barscanner b = new barscanner();
             panel5.Controls.Clear();
+            barscanner b = new barscanner();
             panel5.Controls.Add(b);
             b.BringToFront();
         }
-     
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+        public void Notifier( string msg)
+        {
+            notify.Text = msg;
+            
+        }
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PubIn.connect;
+using PubIn.admin;
 
 namespace PubIn.controlset
 {
@@ -15,6 +17,22 @@ namespace PubIn.controlset
         public settings()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DBConnect db = new DBConnect();
+            db.insertBatch(eventname.Text);
+            dashboard d = new dashboard();
+            d.Reset();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DBConnect db = new DBConnect();
+            db.insertColor(color.Text);
+            dashboard d = new dashboard();
+            d.Reset();
         }
     }
 }

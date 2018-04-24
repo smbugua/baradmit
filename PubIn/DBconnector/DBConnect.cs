@@ -87,7 +87,7 @@ namespace PubIn.connect
       
 
         //Insert statement
-        public void InsertTickets(int batchid, string barcode,int colorid)
+        public void InsertTickets(string batchid, string barcode,string colorid)
         {
             string query = "INSERT INTO tickets (batchid,barcode,colorid) VALUES('"+batchid+"', '"+barcode.ToString()+"','"+colorid+"')";
 
@@ -105,9 +105,9 @@ namespace PubIn.connect
             }
         }
         //Insert Events
-        public void insertBatch( string eventname, DateTime datescheduled)
+        public void insertBatch( string eventname)
         {
-            string query = "INSERT INTO batch (eventname,datescheduled) VALUES('" + eventname + "', '" + datescheduled + "')";
+            string query = "INSERT INTO batch (eventname) VALUES('" + eventname + "')";
 
             //open connection
             if (this.OpenConnection() == true)
@@ -162,6 +162,68 @@ namespace PubIn.connect
                 //close connection
                 this.CloseConnection();
             }
+        }
+
+
+        public int EventSelect( string eventname)
+        {
+            string query = "SELECT id  FROM batch where eventname='"+ eventname+ "' order by datescheduled DESC";
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    int event_id = Convert.ToInt32((dataReader.GetString("id")));
+                    return  event_id;
+
+                }
+                this.CloseConnection();
+
+            }
+            else if(this.OpenConnection() !=true){
+                return 0;
+            }
+            return 0;
+
+            
+
+        }
+
+        public int ColorSelect(string colorname)
+        {
+            string query = "SELECT id  FROM ticketcolor where colorname='" + colorname + "'order by colorname ASC";
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    int event_id = Convert.ToInt32((dataReader.GetString("id")));
+                    return event_id;
+
+                }
+                this.CloseConnection();
+
+            }
+            else if (this.OpenConnection() != true)
+            {
+                return 0;
+            }
+            return 0;
+
+
+
         }
 
         //Delete statement
@@ -226,7 +288,7 @@ namespace PubIn.connect
         public void PopulateEvents(ComboBox objectdropdown)
         {
 
-            string query = "SELECT id,eventname FROM batch order by datescheduled DESC";
+            string query = "SELECT id,eventname FROM batch order by eventname ASC";
             //Open connection
             if (this.OpenConnection() == true)
             {
@@ -315,7 +377,7 @@ namespace PubIn.connect
         //Count statement
         public int CountTickets()
         {
-            string query = "SELECT Count(*) FROM tableinfo";
+            string query = "SELECT Count(*) FROM tickets";
             int Count = -1;
 
             //Open Connection
@@ -381,6 +443,7 @@ namespace PubIn.connect
                 MessageBox.Show("Error , unable to backup!");
             }
         }
+        
 
         //Restore
         public void Restore()
@@ -414,5 +477,6 @@ namespace PubIn.connect
                 MessageBox.Show("Error , unable to Restore!");
             }
         }
+
     }
 }

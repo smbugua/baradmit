@@ -27,17 +27,20 @@ namespace PubIn.controlset
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int eventidvalue = Convert.ToInt32(this.eventid.SelectedValue);
-            int coloridvalue = Convert.ToInt32(this.colorid.SelectedValue);
-            string no = this.nooftickets.Text;
+
             DBConnect db = new DBConnect();
+            string eventname = this.eventid.Text.ToString();
+            string colorname = this.colorid.Text.ToString();
+            string no = this.nooftickets.Text;
+            int n = db.CountTickets();
             for (int i = 0; i < Convert.ToInt32(no); i++)
             {
-                db.InsertTickets(eventidvalue, "event" + i, coloridvalue);
+                db.InsertTickets(eventname, "101"+n + i, colorname);
             }
-            MessageBox.Show("TICKETS HAVE BEEN SAVED SUCCESSFULLY");
+            //MessageBox.Show("TICKETS HAVE BEEN SAVED SUCCESSFULLY");
             dashboard d = new dashboard();
-            d.reset();
+            d.Reset();
+            d.Notifier("TICKETS HAVE BEEN SAVED SUCCESSFULLY");
 
 
         }
