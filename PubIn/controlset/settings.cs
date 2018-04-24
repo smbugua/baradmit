@@ -23,7 +23,10 @@ namespace PubIn.controlset
         {
             DBConnect db = new DBConnect();
             db.insertBatch(eventname.Text);
+            MessageBox.Show("EVENT HAS BEEN ADDED SUCCESSFULLY");
             this.Hide();
+            barscanner b = new barscanner();
+            b.BringToFront();
             dashboard d = new dashboard();
             d.Reset();
         }
@@ -32,7 +35,10 @@ namespace PubIn.controlset
         {
             DBConnect db = new DBConnect();
             db.insertColor(color.Text);
+            MessageBox.Show("COLOUR HAS BEEN ADDED SUCCESSFULLY");
             this.Hide();
+            barscanner b = new barscanner();
+            b.BringToFront();
             dashboard d = new dashboard();
             d.Reset();
 

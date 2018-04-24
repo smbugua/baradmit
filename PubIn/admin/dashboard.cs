@@ -60,17 +60,7 @@ namespace PubIn.admin
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            slidepanel.Height = button3.Height;
-            slidepanel.Top = button3.Top;
-            createusers cu = new createusers();
-            panel5.Controls.Clear();
-            panel5.Controls.Add(cu);
-            cu.BringToFront();
-
-
-        }
+       
 
         private void button5_Click(object sender, EventArgs e)
         {

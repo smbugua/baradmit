@@ -102,7 +102,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::PubIn.Properties.Resources.icons8_combo_chart_50;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(41, 373);
+            this.button5.Location = new System.Drawing.Point(41, 363);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(243, 73);
@@ -119,7 +119,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::PubIn.Properties.Resources.icons8_settings_50;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(41, 262);
+            this.button4.Location = new System.Drawing.Point(41, 267);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(243, 73);
@@ -136,7 +136,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::PubIn.Properties.Resources.icons8_two_tickets_50;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(41, 169);
+            this.button2.Location = new System.Drawing.Point(41, 171);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(243, 73);

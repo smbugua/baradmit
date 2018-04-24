@@ -37,8 +37,10 @@ namespace PubIn.controlset
             {
                 db.InsertTickets(eventname, "101"+n + i, colorname);
             }
-            //MessageBox.Show("TICKETS HAVE BEEN SAVED SUCCESSFULLY");
+            MessageBox.Show("TICKETS HAVE BEEN SAVED SUCCESSFULLY");
             this.Hide();
+            barscanner b = new barscanner();
+            b.BringToFront();
             dashboard d = new dashboard();
             d.Reset();
             d.Notifier("TICKETS HAVE BEEN SAVED SUCCESSFULLY");

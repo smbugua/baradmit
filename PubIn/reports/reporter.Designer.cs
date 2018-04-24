@@ -147,7 +147,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(74, 30);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Filter";
+            this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -187,7 +187,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "reporter";
-            this.Text = "Reports Module";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "REPORTS MODULE";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.reporter_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
